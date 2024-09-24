@@ -1,0 +1,19 @@
+:root {
+    --main-bg: #fff2eb;
+    --gold-font-color: #c79429;
+    --blue-font-color: #56609e;
+    --footer-bg: #3a3737;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container img {
+    height: 70px;
+}
