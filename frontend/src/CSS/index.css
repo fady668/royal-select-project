@@ -1,28 +1,47 @@
 :root {
-    --main-bg: #fff2eb;
-    --gold-font-color: #c79429;
-    --blue-font-color: #56609e;
-    --footer-bg: #3a3737;
+  --main-bg: #fff2eb;
+  --gold-font-color: #c79429;
+  --blue-font-color: #56609e;
+  --footer-bg: #3a3737;
 }
 
 .navbar {
-    width: 100%;
+  width: 100%;
 }
 .navbar .container {
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar .container img {
-    width: 50px;
+  width: 50px;
 }
 .navbar .container .links a {
-    font-size: 23px;
-    width: 120px;
-    height: 35px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+  font-size: 27px;
+  position: relative;
+  width: 120px;
+  height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  overflow: hidden;
+}
+.navbar .container .links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--gold-font-color);
+  transition: 0.3s;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.navbar .container .links a:hover::before {
+  width: 100%;
+}
+.navbar .container .links a:hover {
+  color: white;
 }
